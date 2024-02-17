@@ -6,22 +6,22 @@ function Card(props) {
 
     return(
         <SafeAreaView>
-            <View className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <View className="flex flex-row p-4">
                 <Image 
-                    className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
                     source={{ 
                         uri: data.urlImg
                     }}
-                    style={{width: 40, height: 40}}
+                    style={{width: 100, height: 100}}
+                    className="rounded-lg"
                 />
-                <View className="flex flex-col justify-between p-4 leading-normal">
-                    <Text className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <View className="flex flex-col justify-between pl-2">
+                    <Text className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                         {data.title}
                     </Text>
-                    <Text className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <Text className="mb-3 font-normal text-gray-700">
                         {data.description}
                     </Text>
-                    <Text className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <Text className="mb-3 font-normal text-gray-700">
                         R$ {new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(data.price)}
                     </Text>
                 </View>

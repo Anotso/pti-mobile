@@ -15,25 +15,25 @@ function App(){
       title: 'Produto 1',
       description: 'Descrição do produto 1',
       price: 9.58,
-      urlImg: 'https://minervafoods.com/wp-content/uploads/2023/09/HamburguerAlcatraComBacon_1-2048x1359.jpg'
+      urlImg: 'https://reactjs.org/logo-og.png'
     }),
     JSON.stringify({
       title: 'Produto 2',
       description: 'Descrição do produto 2',
       price: 19.58,
-      urlImg: 'https://minervafoods.com/wp-content/uploads/2023/09/HamburguerAlcatraComBacon_1-2048x1359.jpg'
+      urlImg: 'https://reactjs.org/logo-og.png'
     }),
     JSON.stringify({
       title: 'Produto 3',
       description: 'Descrição do produto 3',
       price: 13.80,
-      urlImg: 'https://minervafoods.com/wp-content/uploads/2023/09/HamburguerAlcatraComBacon_1-2048x1359.jpg'
+      urlImg: 'https://reactjs.org/logo-og.png'
     }),
     JSON.stringify({
       title: 'Produto 4',
       description: 'Descrição do produto 4',
       price: 39.90,
-      urlImg: 'https://minervafoods.com/wp-content/uploads/2023/09/HamburguerAlcatraComBacon_1-2048x1359.jpg'
+      urlImg: 'https://reactjs.org/logo-og.png'
     }),
   ];
 
@@ -41,7 +41,7 @@ function App(){
     <SafeAreaView>
       <ScrollView
         contentInsetAdjustmentBehavior="automatic">
-        <View className="bg-white dark:bg-black flex flex-col justify-center items-center h-screen">
+        <View className="flex justify-center items-center h-screen bg-slate-300">
           {data.map((item, key) =>{
             return <Card values={item} key={key}/>
           })}
